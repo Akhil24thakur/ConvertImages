@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Image Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+  <div class="menu-bar">
+    
+    
+  </div>
+  <h1 class="menu-title">Professional Image Converter</h1>
+  <hr>
+  <div class="container">
+    <main>
+      <div class="upload-section">
+        <input type="file" id="imageInput" accept="image/*" onchange="handleFileSelect()">
+        <label for="imageInput" class="file-label">Choose an image</label>
+      </div>
+      
+      <div id="imagePreview" class="image-preview"></div>
+      
+      <div class="convert-section" style="display:none;">
+        <select id="formatSelect">
+          <option value="image/jpeg">JPEG</option>
+          <option value="image/png">PNG</option>
+          <option value="image/webp">WebP</option>
+          <option value="image/bmp">BMP</option>
+          <option value="image/tiff">TIFF</option>
+        </select>
+        <button id="convertButton" onclick="convertImage()">Convert Image</button>
+        <a id="downloadLink" class="download-link" style="display:none;">Download Converted Image</a>
+      </div>
+    </main>
+    
+    <canvas id="canvas" style="display:none;"></canvas>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

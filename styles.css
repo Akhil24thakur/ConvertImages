@@ -1,0 +1,127 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url(back.png);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-bar {
+  position: fixed;
+  
+}
+
+.menu-title {
+  font-size: 25px;
+  margin: 0;
+  color: black;
+  text-align: center;
+
+}
+
+
+.container {
+  max-width: 800px;
+  height: 10px;
+  margin: 80px auto 0; 
+  padding: 20px;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.file-label {
+  display: inline-block;
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.file-label:hover {
+  background-color: white;
+}
+
+#imageInput {
+  display: none;
+}
+
+.image-preview {
+  margin-bottom: 20px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.convert-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  background-color: burlywood;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+button {
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.download-link {
+  display: inline-block;
+  background-color: burlywood;
+  height: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.download-link:hover {
+  opacity: 0.9;
+}
+
+
+@media (max-width: 600px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-title {
+    margin-bottom: 10px;
+  }
+
+  #themeToggle {
+    margin-top: 5px;
+  }
+
+  .convert-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
